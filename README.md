@@ -1,6 +1,6 @@
 # DANGAN TROOPER
 
-[![Witches](http://img.youtube.com/vi/gjdQJvt73p0/0.jpg)](https://www.youtube.com/watch?v=gjdQJvt73p0)
+[![DANGAN TROOPER](http://img.youtube.com/vi/gjdQJvt73p0/0.jpg)](https://www.youtube.com/watch?v=gjdQJvt73p0)
 
 ## 説明
 銃弾をもって砲弾を駆逐してください。<br>
