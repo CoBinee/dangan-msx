@@ -1,0 +1,59 @@
+crt0.rel            :   crt0.s \
+                        main.inc
+main.rel            :   main.s main.inc \
+                        bios.inc System.inc
+System.rel          :   System.s System.inc \
+                        main.inc bios.inc vdp.inc
+Math.rel            :   Math.s Math.inc
+Sound.rel           :   Sound.s Sound.inc \
+                        bios.inc System.inc
+App.rel             :   App.s App.inc \
+                        bios.inc vdp.inc System.inc Title.inc Game.inc
+Title.rel           :   Title.s Title.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Fade.inc Message.inc
+Game.rel            :   Game.s Game.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Fade.inc Message.inc Stage.inc Character.inc Player.inc Enemy.inc Bullet.inc Missile.inc Bomb.inc
+Fade.rel            :   Fade.s Fade.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+Message.rel         :   Message.s Message.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+Level.rel           :   Level.s Level.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc
+Stage.rel           :   Stage.s Stage.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+Character.rel       :   Character.s Character.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc
+Player.rel          :   Player.s Player.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Bullet.inc Bomb.inc
+Enemy.rel           :   Enemy.s Enemy.inc \
+                        bios.inc vdp.inc System.inc Math.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Missile.inc Bomb.inc
+EnemyFort.rel       :   EnemyFort.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc
+EnemyTurret.rel     :   EnemyTurret.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc
+EnemyGunner.rel     :   EnemyGunner.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc
+EnemyHomer.rel      :   EnemyHomer.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc
+EnemyLegs.rel       :   EnemyLegs.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc Bomb.inc
+EnemyMonster.rel    :   EnemyMonster.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc Bomb.inc
+EnemyFlier.rel      :   EnemyFlier.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc Missile.inc Bomb.inc
+EnemyHand.rel       :   EnemyHand.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc
+EnemyHead.rel       :   EnemyHead.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc Bomb.inc
+EnemyBeamer.rel     :   EnemyBeamer.s \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc Enemy.inc
+Bullet.rel          :   Bullet.s Bullet.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+Missile.rel         :   Missile.s Missile.inc \
+                        bios.inc vdp.inc System.inc Math.inc Sound.inc App.inc Game.inc Stage.inc Character.inc Player.inc
+Bomb.rel            :   Bomb.s Bomb.inc \
+                        bios.inc vdp.inc System.inc Sound.inc App.inc Game.inc
+
+sprite.rel          :   sprite.s
+pattern.rel         :   pattern.s
+large.rel           :   large.s
